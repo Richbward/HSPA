@@ -97,9 +97,6 @@
                 <input type="text" class="form-control" ngModel name="Type">
               </div> -->
 
-
-<!-- [(ngModel)]="propertyView.City"> -->
-
               <div class="form-group col-12">
                 <label>City</label>
                 <select
@@ -108,8 +105,8 @@
                 [ngModelOptions]="{standalone: true}"
                 name="City">
                   <option value=''>--Select City--</option>
-                  <option *ngFor="let city of cityList" value={{city}}>
-                    {{city}}
+                  <option *ngFor="let city of cityList" value={{city.id}}>
+                    {{city.name}}
                   </option>
                 </select>
                 <div class="error-block"
